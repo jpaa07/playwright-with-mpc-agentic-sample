@@ -1,0 +1,27 @@
+{
+  "name": "playwright-mcp-agentic-testing",
+  "version": "1.0.0",
+  "description": "Sample framework for AI-agent driven testing with Playwright MCP and Playwright Test Agents",
+  "scripts": {
+    "test": "playwright test",
+    "test:chromium": "playwright test --project=chromium",
+    "test:smoke": "playwright test --grep @smoke --project=chromium",
+    "test:generated": "playwright test tests/agent-generated",
+    "test:headed": "playwright test --project=chromium --headed",
+    "test:ui": "playwright test --ui",
+    "report": "playwright show-report",
+    "typecheck": "tsc -p .",
+    "mcp:check": "node scripts/mcp-check.mjs"
+  },
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@playwright/test": "^1.56.1",
+    "@types/node": "^26.6.5",
+    "typescript": "^5.9.3"
+  },
+  "private": true,
+  "engines": {
+    "node": ">=18"
+  }
+}
